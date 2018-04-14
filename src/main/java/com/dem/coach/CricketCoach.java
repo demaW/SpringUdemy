@@ -1,5 +1,7 @@
 package com.dem.coach;
 
+import com.dem.fortune.FortuneService;
+
 public class CricketCoach implements Coach {
     private FortuneService fortuneService;
 

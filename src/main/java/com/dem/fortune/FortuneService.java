@@ -1,4 +1,4 @@
-package com.dem.coach;
+package com.dem.fortune;
 
 public interface FortuneService {
     public String gerFortune();

@@ -1,4 +1,4 @@
-package com.dem.coach;
+package com.dem.fortune;
 
 import java.util.Arrays;
 import java.util.List;
