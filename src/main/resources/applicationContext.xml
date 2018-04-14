@@ -9,11 +9,11 @@
 
     <context:property-placeholder location="classpath:props.properties"/>
 
-    <bean id="hapFortune" class="com.dem.coach.HappyFortune">
-    </bean>
+    <bean id="hapFortune" class="com.dem.coach.HappyFortune"/>
+    <bean id="randomFortune" class="com.dem.coach.RandomFortune"/>
 
     <bean id="baseballCoach" class="com.dem.coach.BaseballCoach">
-        <constructor-arg ref="hapFortune"/>
+        <constructor-arg ref="randomFortune"/>
     </bean>
 
     <bean id="cricketCoach" class="com.dem.coach.CricketCoach">
