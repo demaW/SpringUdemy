@@ -30,4 +30,9 @@ public class TennisCoach implements Coach {
     public String getFortune() {
         return fortuneService.gerFortune();
     }
+
+    @Override
+    public void getCoachInfo() {
+
+    }
 }
