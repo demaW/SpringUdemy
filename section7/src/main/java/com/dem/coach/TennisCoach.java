@@ -8,11 +8,6 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
     private FortuneService fortuneService;
 
-    @Autowired
-    public TennisCoach(FortuneService fortuneService) {
-        this.fortuneService = fortuneService;
-    }
-
     @Override
     public String getDailyWorkout() {
         return "30 mins of tennis";
@@ -21,6 +16,11 @@ public class TennisCoach implements Coach {
     @Override
     public String getFortune() {
         return fortuneService.gerFortune();
+    }
+
+    @Autowired
+    public void setFortune(FortuneService fortuneService){
+        this.fortuneService = fortuneService;
     }
 
 }
